@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styles */
+.login-container, .register-container, .congratulations-container {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;  /* Max width for large screens */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #007bbd;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Mobile-First Adjustments */
+@media (max-width: 600px) {
+    .login-container, .register-container, .congratulations-container {
+        padding: 15px; /* Slightly reduce padding on small screens */
+    }
+
+    form input, form button {
+        font-size: 14px;  /* Reduce input and button font size on small screens */
+    }
+
+    h1 {
+        font-size: 24px;  /* Adjust header size for smaller screens */
+    }
+
+    p {
+        font-size: 14px;  /* Adjust paragraph size for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 22px;  /* Smaller header size for very small screens */
+    }
+
+    form input, form button {
+        font-size: 13px;  /* Further reduce font size for very small screens */
+    }
+
+    p {
+        font-size: 12px;  /* Smaller paragraph size for very small screens */
+    }
+}
+
+.congratulations-container {
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.congratulations-container h1 {
+    font-size: 24px;
+    color: #28a745;
+}
+
+.congratulations-container p {
+    font-size: 18px;
+    color: #333;
+}
