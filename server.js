@@ -11,10 +11,10 @@ app.use(express.static(path.join(__dirname, 'public'))); // Serve static files f
 
 // Database connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'your_password',
-    database: 'instagram_clone'
+    host: 'mysql.railway.internal',  // Use Railway's MySQL host
+    user: 'root',                    // Your MySQL username
+    password: 'GBMVwKKzWYHVsJzFpqVkrjpVIeMHLjEk',  // Your MySQL password
+    database: 'railway'              // Your MySQL database name
 });
 
 db.connect(err => {
