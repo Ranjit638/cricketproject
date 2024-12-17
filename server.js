@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public'))); // Serve static files f
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'ranjit89',
+    password: 'your_password',
     database: 'instagram_clone'
 });
 
